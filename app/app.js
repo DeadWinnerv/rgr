@@ -40,12 +40,10 @@ app.post('/create', (req,res) => {
 })
 
 app.use(express.static(path.join(__dirname, '/public')))
-const urlencodedParser = express.urlencoded({extended: false});
 
 app.get('/', (req, res) => {
 	res.sendFile(`${__dirname}/index.html`)
 })
-
 
 app.listen(process.env.PORT, () => {
 	console.log('Listening on port ', process.env.PORT);
