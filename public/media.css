@@ -1,0 +1,14 @@
+@media screen and (max-width: 988px) {
+	.post{
+		grid-template-columns: 1fr 1fr;
+	}
+	.container#feed>.post>.post__image {
+		display: none;
+		position: absolute;
+	}
+	.container#feed>.post>.post__container>.post__text {
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+	}
+}
